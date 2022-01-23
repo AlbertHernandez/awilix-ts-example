@@ -1,26 +1,26 @@
 import {
-  babyByIdFinder,
-  babyCreator,
-  babyFinder,
+  userByIdFinder,
+  userCreator,
+  userFinder,
 } from "./modules/dependencies/container";
 
-babyCreator.run({
+userCreator.run({
   userId: "1",
   userName: "Adri",
 });
 
-babyCreator.run({
+userCreator.run({
   userId: "2",
   userName: "Joan",
 });
 
-babyCreator.run({
+userCreator.run({
   userId: "3",
   userName: "Selena",
 });
 
-const selena = babyByIdFinder.run("3");
+const selena = userByIdFinder.run("3");
 console.log("selena: ", selena);
 
-const babies = babyFinder.run();
-console.log("babies: ", babies);
+const users = userFinder.run();
+console.log("users: ", users);

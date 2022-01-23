@@ -1,21 +1,21 @@
 import * as awilix from "awilix";
 
 import { UserRepository } from "../../data-access/user-repository";
-import { BabyCreator } from "../../services/baby-creator";
-import { BabyFinder } from "../../services/baby-finder";
+import { UserCreator } from "../../services/user-creator";
+import { UserFinder } from "../../services/user-finder";
 import { Logger } from "../logger";
-import { BabyByIdFinder } from "../../services/baby-by-id-finder";
+import { UserByIdFinder } from "../../services/user-by-id-finder";
 
 const container = awilix.createContainer();
 
 container.register({
   logger: awilix.asClass(Logger),
   userRepository: awilix.asClass(UserRepository).singleton(),
-  babyCreator: awilix.asClass(BabyCreator),
-  babyFinder: awilix.asClass(BabyFinder),
-  babyByIdFinder: awilix.asClass(BabyByIdFinder),
+  userCreator: awilix.asClass(UserCreator),
+  userFinder: awilix.asClass(UserFinder),
+  userByIdFinder: awilix.asClass(UserByIdFinder),
 });
 
-export const babyCreator = container.resolve("babyCreator");
-export const babyFinder = container.resolve("babyFinder");
-export const babyByIdFinder = container.resolve("babyByIdFinder");
+export const userCreator = container.resolve("userCreator");
+export const userFinder = container.resolve("userFinder");
+export const userByIdFinder = container.resolve("userByIdFinder");

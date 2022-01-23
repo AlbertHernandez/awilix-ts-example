@@ -1,21 +1,21 @@
 import { UserRepository } from "../../data-access/user-repository";
-import { BabyCreator } from "../../services/baby-creator";
-import { BabyFinder } from "../../services/baby-finder";
+import { UserCreator } from "../../services/user-creator";
+import { UserFinder } from "../../services/user-finder";
 import { Logger } from "../logger";
-import { BabyByIdFinder } from "../../services/baby-by-id-finder";
+import { UserByIdFinder } from "../../services/user-by-id-finder";
 
 export const logger = new Logger();
 export const userRepository = new UserRepository();
 
-export const babyCreator = new BabyCreator({
+export const userCreator = new UserCreator({
   userRepository,
   logger,
 });
 
-export const babyFinder = new BabyFinder({
+export const userFinder = new UserFinder({
   userRepository,
 });
 
-export const babyByIdFinder = new BabyByIdFinder({
+export const userByIdFinder = new UserByIdFinder({
   userRepository,
 });

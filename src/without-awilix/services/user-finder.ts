@@ -1,6 +1,6 @@
 import { UserRepository } from "../data-access/user-repository";
 
-export class BabyFinder {
+export class UserFinder {
   #userRepository;
 
   constructor(dependencies: { userRepository: UserRepository }) {
