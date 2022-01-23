@@ -1,11 +1,7 @@
-<h1 align="center">Typescript Library Skeleton</h3>
+<h1 align="center">Awilix TS Example</h1>
 
 <p align="center">
-  Skeleton for new typescript libraries
-</p>
-
-<p align="center">
-    <a href="https://github.com/AlbertHernandez/typescript-library-skeleton/actions/workflows/nodejs.yml?branch=main"><img src="https://github.com/AlbertHernandez/typescript-library-skeleton/actions/workflows/nodejs.yml/badge.svg?branch=main" alt="nodejs"/></a>
+  Comparative between using Awilix or pure TS
 </p>
 
 ## Table of Contents
@@ -33,7 +29,10 @@ npm install
 This library offers a playground where we can play with the functions that we are developing
 
 ```bash
-npm run playground
+npm run without:awilix
+```
+```bash
+npm run with:awilix
 ```
 
 In case you wan
@@ -42,14 +41,6 @@ In case you wan
 
 ```bash
 npm run build
-```
-
-## Testing
-
-### Jest with Testing Library
-
-```bash
-npm run test
 ```
 
 ## Linting

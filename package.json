@@ -1,5 +1,5 @@
 {
-  "name": "typescript-library-skeleton",
+  "name": "awilix-ts-example",
   "version": "1.0.0",
   "description": "Skeleton for new typescript libraries",
   "main": "src/index.js",
@@ -7,8 +7,8 @@
     "prepare": "husky install",
     "lint": "eslint --ignore-path .gitignore . --ext .js,.ts",
     "lint:fix": "npm run lint -- --fix",
-    "playground:without:awilix": "ts-node-dev --respawn src/without-awilix",
-    "playground:with:awilix": "ts-node-dev --respawn src/with-awilix",
+    "without:awilix": "ts-node-dev --respawn src/without-awilix",
+    "with:awilix": "ts-node-dev --respawn src/with-awilix",
     "build": "npm run build:clean && npm run build:tsc",
     "build:clean": "rimraf dist; exit 0",
     "build:tsc": "tsc -p tsconfig.prod.json"
@@ -19,13 +19,12 @@
   },
   "keywords": [
     "typescript",
-    "library",
-    "skeleton"
+    "awilix"
   ],
   "author": "alberthernandezdev@gmail.com",
   "license": "MIT",
   "engines": {
-    "node": ">=16.0.0",
+    "node": ">=14.0.0",
     "npm": ">=8.3.0"
   },
   "bugs": {
