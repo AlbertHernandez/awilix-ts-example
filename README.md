@@ -1,7 +1,7 @@
 <h1 align="center">Awilix TS Example</h1>
 
 <p align="center">
-  Comparative between using [Awilix](https://github.com/jeffijoe/awilix) or pure TS
+  Comparative between using <a href="https://github.com/jeffijoe/awilix">Awilix</a> or pure TS
 </p>
 
 ## Table of Contents
