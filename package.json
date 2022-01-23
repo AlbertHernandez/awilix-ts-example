@@ -4,12 +4,10 @@
   "description": "Skeleton for new typescript libraries",
   "main": "src/index.js",
   "scripts": {
-    "test": "npm run test:unit",
-    "test:unit": "NODE_ENV=test jest",
     "prepare": "husky install",
     "lint": "eslint --ignore-path .gitignore . --ext .js,.ts",
     "lint:fix": "npm run lint -- --fix",
-    "playground": "ts-node-dev --respawn playground",
+    "playground:without:awilix": "ts-node-dev --respawn src/without-awilix",
     "build": "npm run build:clean && npm run build:tsc",
     "build:clean": "rimraf dist; exit 0",
     "build:tsc": "tsc -p tsconfig.prod.json"
