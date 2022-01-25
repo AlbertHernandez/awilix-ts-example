@@ -1,6 +1,6 @@
-import { UserRepository } from "../data-access/user-repository";
-import { User } from "../models/user";
-import { Logger } from "../modules/logger";
+import { User } from "./user";
+import { UserRepository } from "./user-repository";
+import { Logger } from "./logger";
 
 export class UserCreator {
   #userRepository;
@@ -22,6 +22,6 @@ export class UserCreator {
     });
 
     this.#userRepository.save(user);
-    this.#logger.log(`New User created: ${userName}!`);
+    this.#logger.log(`New user created: ${userName}!`);
   }
 }

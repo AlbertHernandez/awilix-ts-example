@@ -2,7 +2,7 @@ import {
   userByIdFinder,
   userCreator,
   userFinder,
-} from "./modules/dependencies/container";
+} from "./infrastructure/dependencies/container";
 
 userCreator.run({
   userId: "1",
