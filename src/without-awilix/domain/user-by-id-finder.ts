@@ -1,4 +1,4 @@
-import { UserRepository } from "../data-access/user-repository";
+import { UserRepository } from "./user-repository";
 
 export class UserByIdFinder {
   #userRepository;

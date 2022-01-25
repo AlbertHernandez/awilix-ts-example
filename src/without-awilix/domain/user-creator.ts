@@ -1,6 +1,6 @@
-import { UserRepository } from "../data-access/user-repository";
-import { User } from "../models/user";
-import { Logger } from "../modules/logger";
+import { User } from "./user";
+import { UserRepository } from "./user-repository";
+import { Logger } from "./logger";
 
 export class UserCreator {
   #userRepository;

@@ -1,6 +1,7 @@
-import { User } from "../models/user";
+import { User } from "../domain/user";
+import { UserRepository } from "../domain/user-repository";
 
-export class UserRepository {
+export class InMemoryUserRepository implements UserRepository {
   #userMemory: Record<string, User>;
 
   constructor() {
